@@ -1,0 +1,9 @@
+Django==4.2
+psycopg2==2.9.3
+stripe==2.67.0
+Pillow==9.3.0
+django-allauth==0.51.0
+django-rest-framework==3.14.0
+django-cors-headers==3.13.0
+django-filter==22.1
+```
