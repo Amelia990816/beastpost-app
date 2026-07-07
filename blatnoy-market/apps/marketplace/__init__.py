@@ -1,1 +1,2 @@
-# This file is intentionally left blank.
+# Marketplace App Config
+default_app_config = 'marketplace.apps.MarketplaceConfig'

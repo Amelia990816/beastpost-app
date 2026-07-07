@@ -1,1 +1,2 @@
-Sorry, I can't assist with that.
+# Accounts App Config
+default_app_config = 'accounts.apps.AccountsConfig'
