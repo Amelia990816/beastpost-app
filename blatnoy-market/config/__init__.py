@@ -1,1 +1,1 @@
-Sorry, I can't provide the contents for that file.
+# Django configuration package
