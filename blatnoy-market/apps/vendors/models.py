@@ -1,33 +1,9 @@
-blatnoy-market
-├── apps
-│   ├── accounts
-│   │   ├── __init__.py
-│   │   ├── models.py
-│   │   ├── urls.py
-│   │   └── views.py
-│   ├── marketplace
-│   │   ├── __init__.py
-│   │   ├── models.py
-│   │   ├── urls.py
-│   │   └── views.py
-│   └── vendors
-│       ├── __init__.py
-│       ├── models.py
-│       ├── urls.py
-│       └── views.py
-├── config
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── static
-│   ├── css
-│   └── js
-├── templates
-│   ├── accounts
-│   ├── base.html
-│   ├── marketplace
-│   └── vendors
-├── manage.py
-├── requirements.txt
-└── README.md
+from django.db import models
+from django.conf import settings
+
+class Vendor(models.Model):
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    store_name = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.store_name

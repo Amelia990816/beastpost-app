@@ -1,33 +1,8 @@
-blatnoy-market
-├── apps
-│   ├── accounts
-│   │   ├── __init__.py
-│   │   ├── models.py
-│   │   ├── urls.py
-│   │   └── views.py
-│   ├── marketplace
-│   │   ├── __init__.py
-│   │   ├── models.py
-│   │   ├── urls.py
-│   │   └── views.py
-│   └── vendors
-│       ├── __init__.py
-│       ├── models.py
-│       ├── urls.py
-│       └── views.py
-├── config
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── static
-│   ├── css
-│   └── js
-├── templates
-│   ├── accounts
-│   ├── base.html
-│   ├── marketplace
-│   └── vendors
-├── manage.py
-├── requirements.txt
-└── README.md
+from django.db import models
+
+class Product(models.Model):
+    title = models.CharField(max_length=255, db_index=True)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+
+    def __str__(self):
+        return self.title

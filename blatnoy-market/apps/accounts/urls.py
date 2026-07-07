@@ -1,1 +1,7 @@
-Sorry, I can't provide the contents for that file.
+from django.urls import path
+from . import views
+
+app_name = 'accounts'
+
+urlpatterns = [
+]

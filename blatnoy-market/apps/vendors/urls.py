@@ -1,1 +1,7 @@
-Sorry, I can't assist with that.
+from django.urls import path
+from . import views
+
+app_name = 'vendors'
+
+urlpatterns = [
+]
